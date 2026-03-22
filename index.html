@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Meenakshi Akula — CSE Student, Cybersecurity Enthusiast & Developer. Building impactful digital experiences with logic, creativity, and security." />
+  <meta name="keywords" content="Meenakshi Akula, portfolio, cybersecurity, developer, computer science, web development" />
+  <meta name="author" content="Meenakshi Akula" />
+
+  <title>Meenakshi Akula — Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== PRELOADER ===== -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-inner">
+      <span class="preloader-name">MEENAKSHI</span>
+      <div class="preloader-bar"><div class="preloader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ===== CURSOR (desktop only) ===== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ===== SIDE LABELS ===== -->
+  <div class="side-label side-label--left" aria-hidden="true">
+    <a href="#about">ABOUT</a>
+  </div>
+  <div class="side-label side-label--right" aria-hidden="true">
+    <a href="#projects">PROJECTS</a>
+  </div>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="header" id="header">
+    <nav class="nav">
+      <a href="#" class="nav__logo">MA</a>
+      <ul class="nav__links">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#achievements" class="nav__link">Achievements</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="mobile-menu__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__content">
+      <!-- Left: Text -->
+      <div class="hero__text reveal">
+        <span class="hero__label">COMPUTER SCIENCE &bull; CYBERSECURITY</span>
+        <h1 class="hero__title">
+          MEENAKSHI<br />
+          <span class="hero__title--accent">AKULA</span>
+        </h1>
+        <p class="hero__tagline">
+          Blending logic, creativity, and security<br />
+          to build impactful digital experiences.
+        </p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View Projects</a>
+          <a href="#contact" class="btn btn--outline">Get In Touch</a>
+        </div>
+      </div>
+
+      <!-- Right: Portrait -->
+      <div class="hero__image reveal">
+        <div class="hero__image-wrapper">
+          <img src="assets/images/hero-portrait.png" alt="Meenakshi Akula — portrait" loading="eager" />
+          <div class="hero__image-overlay"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Name card -->
+    <div class="hero__namecard reveal">
+      <div class="namecard__inner">
+        <span class="namecard__name">MEENAKSHI AKULA</span>
+        <span class="namecard__role">CSE STUDENT &bull; DEVELOPER</span>
+      </div>
+      <div class="namecard__line"></div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll" aria-hidden="true">
+      <span>&darr;</span> SCROLL
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__number">01</span>
+        <h2 class="section__title">ABOUT<br /><span class="section__title--light">ME</span></h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__content reveal">
+          <p class="about__lead">
+            I'm a Computer Science Engineering student at <strong>Lovely Professional University</strong>, passionate about <strong>cybersecurity</strong>, <strong>software development</strong>, and building elegant solutions to complex problems.
+          </p>
+          <p>
+            My journey spans from crafting responsive web experiences to analyzing security vulnerabilities. I thrive at the intersection of creativity and logic — where clean code meets impactful design.
+          </p>
+          <p>
+            When I'm not coding, you'll find me solving competitive programming challenges, exploring ethical hacking techniques, or diving into the latest in cloud computing.
+          </p>
+        </div>
+        <div class="about__details reveal">
+          <div class="about__detail-item">
+            <span class="about__detail-label">Education</span>
+            <span class="about__detail-value">B.Tech CSE — LPU (2023–Present)</span>
+          </div>
+          <div class="about__detail-item">
+            <span class="about__detail-label">Intermediate</span>
+            <span class="about__detail-value">90.8%</span>
+          </div>
+          <div class="about__detail-item">
+            <span class="about__detail-label">Matriculation</span>
+            <span class="about__detail-value">CGPA 10.0</span>
+          </div>
+          <div class="about__detail-item">
+            <span class="about__detail-label">Focus Areas</span>
+            <span class="about__detail-value">Cybersecurity &bull; Web Dev &bull; Cloud</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__number">02</span>
+        <h2 class="section__title">SKILL<br /><span class="section__title--light">SET</span></h2>
+      </div>
+      <div class="skills__grid">
+        <!-- Languages -->
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">&#60;/&#62;</div>
+          <h3 class="skill-card__title">Languages</h3>
+          <div class="skill-card__tags">
+            <span>JavaScript</span><span>Java</span><span>C++</span><span>Python</span><span>HTML</span><span>CSS</span><span>SQL</span>
+          </div>
+        </div>
+        <!-- Cybersecurity -->
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">&#128274;</div>
+          <h3 class="skill-card__title">Cybersecurity</h3>
+          <div class="skill-card__tags">
+            <span>Nmap</span><span>Burp Suite</span><span>Wireshark</span><span>Metasploit</span>
+          </div>
+        </div>
+        <!-- Tools & Platforms -->
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">&#9881;</div>
+          <h3 class="skill-card__title">Tools & Platforms</h3>
+          <div class="skill-card__tags">
+            <span>Git</span><span>GitHub</span><span>MySQL</span><span>REST APIs</span><span>Figma</span><span>VMware</span>
+          </div>
+        </div>
+        <!-- Core Subjects -->
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">&#128218;</div>
+          <h3 class="skill-card__title">Core Subjects</h3>
+          <div class="skill-card__tags">
+            <span>DBMS</span><span>Operating Systems</span><span>Computer Networks</span><span>OOPs</span>
+          </div>
+        </div>
+        <!-- Soft Skills -->
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">&#128161;</div>
+          <h3 class="skill-card__title">Soft Skills</h3>
+          <div class="skill-card__tags">
+            <span>Problem-Solving</span><span>Leadership</span><span>Adaptability</span><span>Quick Learner</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__number">03</span>
+        <h2 class="section__title">SELECTED<br /><span class="section__title--light">PROJECTS</span></h2>
+      </div>
+      <div class="projects__grid">
+        <!-- Project 1 -->
+        <article class="project-card reveal" id="project-1">
+          <div class="project-card__number">01</div>
+          <div class="project-card__content">
+            <h3 class="project-card__title">AI Bargain Hunter Bot</h3>
+            <p class="project-card__desc">
+              AI-powered bot that tracks discounts and compares prices across platforms. Achieved <strong>95% accuracy</strong> and <strong>90% speed improvement</strong> in price comparison workflows.
+            </p>
+            <div class="project-card__tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>API Fetching</span>
+            </div>
+          </div>
+          <div class="project-card__arrow">&rarr;</div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal" id="project-2">
+          <div class="project-card__number">02</div>
+          <div class="project-card__content">
+            <h3 class="project-card__title">Student Grades Analyzer</h3>
+            <p class="project-card__desc">
+              C++ application that processes student records, computes results using STL (vectors, maps). Optimized runtime performance by <strong>92%</strong>.
+            </p>
+            <div class="project-card__tech">
+              <span>C++</span><span>STL</span><span>Vectors</span><span>Maps</span>
+            </div>
+          </div>
+          <div class="project-card__arrow">&rarr;</div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal" id="project-3">
+          <div class="project-card__number">03</div>
+          <div class="project-card__content">
+            <h3 class="project-card__title">Cybersecurity Virtual Experience</h3>
+            <p class="project-card__desc">
+              Tata Forage program — SOC operations, log analysis, threat detection, incident reporting, and vulnerability analysis in real-world scenarios.
+            </p>
+            <div class="project-card__tech">
+              <span>SOC</span><span>Log Analysis</span><span>Threat Detection</span><span>Incident Reporting</span>
+            </div>
+          </div>
+          <div class="project-card__arrow">&rarr;</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS SECTION ===== -->
+  <section class="section achievements" id="achievements">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__number">04</span>
+        <h2 class="section__title">ACHIEVE&shy;<br /><span class="section__title--light">MENTS</span></h2>
+      </div>
+      <div class="achievements__grid">
+        <div class="achievement-card reveal">
+          <div class="achievement-card__icon">&#127942;</div>
+          <h3 class="achievement-card__title">HackEthics Workshop</h3>
+          <p>Top 5 in Ethical Hacking Workshop among <strong>250 participants</strong>.</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-card__icon">&#11088;</div>
+          <h3 class="achievement-card__title">HackerRank Python</h3>
+          <p>Earned <strong>5-star Python badge</strong> on HackerRank.</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-card__icon">&#128187;</div>
+          <h3 class="achievement-card__title">Competitive Coding</h3>
+          <p>Solved <strong>100+ coding problems</strong> across platforms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS SECTION ===== -->
+  <section class="section certifications" id="certifications">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__number">05</span>
+        <h2 class="section__title">CERTIFI&shy;<br /><span class="section__title--light">CATIONS</span></h2>
+      </div>
+      <div class="certifications__list">
+        <div class="cert-item reveal">
+          <span class="cert-item__provider">Infosys</span>
+          <span class="cert-item__name">ChatGPT Prompt Engineering</span>
+        </div>
+        <div class="cert-item reveal">
+          <span class="cert-item__provider">NPTEL</span>
+          <span class="cert-item__name">Cloud Computing</span>
+        </div>
+        <div class="cert-item reveal">
+          <span class="cert-item__provider">Coursera</span>
+          <span class="cert-item__name">Computer Networking</span>
+        </div>
+        <div class="cert-item reveal">
+          <span class="cert-item__provider">FreeCodeCamp</span>
+          <span class="cert-item__name">Responsive Web Design</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__number">06</span>
+        <h2 class="section__title">GET IN<br /><span class="section__title--light">TOUCH</span></h2>
+      </div>
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <p class="contact__lead">
+            Have a project in mind, or just want to say hello? I'd love to hear from you.
+          </p>
+          <div class="contact__links">
+            <a href="mailto:meenakshiakula19@gmail.com" class="contact__link" id="contact-email">
+              <span class="contact__link-label">Email</span>
+              <span class="contact__link-value">meenakshiakula19@gmail.com</span>
+            </a>
+            <a href="https://github.com/MeenakshiAkula" target="_blank" rel="noopener noreferrer" class="contact__link" id="contact-github">
+              <span class="contact__link-label">GitHub</span>
+              <span class="contact__link-value">github.com/MeenakshiAkula</span>
+            </a>
+            <a href="https://linkedin.com/in/MeenakshiAkula" target="_blank" rel="noopener noreferrer" class="contact__link" id="contact-linkedin">
+              <span class="contact__link-label">LinkedIn</span>
+              <span class="contact__link-value">linkedin.com/in/MeenakshiAkula</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact__form-wrapper reveal">
+          <form class="contact__form" id="contactForm">
+            <div class="form-group">
+              <label for="formName">Name</label>
+              <input type="text" id="formName" name="name" required placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label for="formEmail">Email</label>
+              <input type="email" id="formEmail" name="email" required placeholder="Your email" />
+            </div>
+            <div class="form-group">
+              <label for="formMessage">Message</label>
+              <textarea id="formMessage" name="message" rows="5" required placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="formSubmit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">&copy; 2026 Meenakshi Akula. All rights reserved.</p>
+      <div class="footer__socials">
+        <a href="https://github.com/MeenakshiAkula" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+        <span>&bull;</span>
+        <a href="https://linkedin.com/in/MeenakshiAkula" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+        <span>&bull;</span>
+        <a href="mailto:meenakshiakula19@gmail.com" aria-label="Email">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script src="script.js"></script>
+</body>
+</html>
