@@ -81,7 +81,7 @@
   // MOBILE NAVIGATION
   // ==========================================
   const navToggle = document.getElementById('navToggle');
-  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileMenu = document.getElementById('sidebar');
 
   navToggle.addEventListener('click', () => {
     navToggle.classList.toggle('active');
@@ -133,19 +133,44 @@
   });
 
   // ==========================================
-  // ACTIVE NAV LINK HIGHLIGHT
+  // ACTIVE NAV LINK HIGHLIGHT + DYNAMIC SIDE LABELS
   // ==========================================
   const sections = document.querySelectorAll('.section');
-  const navLinks = document.querySelectorAll('.nav__link');
+  const navLinks = document.querySelectorAll('.sidebar__link');
+  const sideLabelLeft = document.getElementById('sideLabelLeft');
+  const sideLabelRight = document.getElementById('sideLabelRight');
+  const sectionsArray = Array.from(sections);
 
   const sectionObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const id = entry.target.getAttribute('id');
+          const label = entry.target.getAttribute('data-label') || id.toUpperCase();
+
+          // Update active nav link
           navLinks.forEach((link) => {
             link.classList.toggle('active', link.getAttribute('href') === '#' + id);
           });
+
+          // Update side labels dynamically
+          if (sideLabelLeft) {
+            sideLabelLeft.textContent = label;
+            sideLabelLeft.setAttribute('href', '#' + id);
+          }
+
+          // Right label shows the next section
+          const currentIndex = sectionsArray.indexOf(entry.target);
+          const nextSection = sectionsArray[currentIndex + 1];
+          if (sideLabelRight && nextSection) {
+            const nextLabel = nextSection.getAttribute('data-label') || nextSection.id.toUpperCase();
+            sideLabelRight.textContent = nextLabel;
+            sideLabelRight.setAttribute('href', '#' + nextSection.id);
+          } else if (sideLabelRight && !nextSection) {
+            // Last section: right label points back to top
+            sideLabelRight.textContent = 'TOP';
+            sideLabelRight.setAttribute('href', '#hero');
+          }
         }
       });
     },
