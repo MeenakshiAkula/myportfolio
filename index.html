@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Meenakshi Akula — CSE Student, Cybersecurity Enthusiast & Developer. Building impactful digital experiences with logic, creativity, and security." />
+  <meta name="keywords"
+    content="Meenakshi Akula, portfolio, cybersecurity, developer, computer science, web development" />
+  <meta name="author" content="Meenakshi Akula" />
+
+  <title>Meenakshi Akula — Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap"
+    rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ===== PRELOADER ===== -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-inner">
+      <span class="preloader-name">MEENAKSHI</span>
+      <div class="preloader-bar">
+        <div class="preloader-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CURSOR (desktop only) ===== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ===== SIDE LABELS ===== -->
+  <div class="side-label side-label--left" aria-hidden="true">
+    <a href="#about" id="sideLabelLeft"> </a>
+  </div>
+
+  <!-- Floating Top Elements -->
+  <a href="#" class="site-logo" id="header">MA</a>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span>
+  </button>
+
+  <!-- ===== OFF-CANVAS SIDEBAR ===== -->
+  <aside class="sidebar" id="sidebar">
+    <nav class="sidebar__nav">
+      <ul class="sidebar__links">
+        <li>
+          <a href="#about" class="sidebar__link">
+            <svg viewBox="0 0 24 24" fill="none" class="sidebar__icon" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <span class="sidebar__text">About</span>
+          </a>
+        </li>
+        <li>
+          <a href="#education" class="sidebar__link">
+            <svg viewBox="0 0 24 24" fill="none" class="sidebar__icon" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
+            </svg>
+            <span class="sidebar__text">Education</span>
+          </a>
+        </li>
+        <li>
+          <a href="#skills" class="sidebar__link">
+            <svg viewBox="0 0 24 24" fill="none" class="sidebar__icon" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            <span class="sidebar__text">Skills</span>
+          </a>
+        </li>
+        <li>
+          <a href="#projects" class="sidebar__link">
+            <svg viewBox="0 0 24 24" fill="none" class="sidebar__icon" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <span class="sidebar__text">Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="#achievements" class="sidebar__link">
+            <svg viewBox="0 0 24 24" fill="none" class="sidebar__icon" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+            <span class="sidebar__text">Awards</span>
+          </a>
+        </li>
+        <li>
+          <a href="#certifications" class="sidebar__link">
+            <svg viewBox="0 0 24 24" fill="none" class="sidebar__icon" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+            <span class="sidebar__text">Certs</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="sidebar__link">
+            <svg viewBox="0 0 24 24" fill="none" class="sidebar__icon" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span class="sidebar__text">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="sidebar__socials">
+      <a href="https://github.com/MeenakshiAkula" target="_blank" class="sidebar__social-link" title="GitHub">
+        <svg viewBox="0 0 24 24" fill="none" class="sidebar__social-icon" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+          </path>
+        </svg>
+        <span class="sidebar__text">GitHub</span>
+      </a>
+      <a href="https://linkedin.com/in/MeenakshiAkula" target="_blank" class="sidebar__social-link" title="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" class="sidebar__social-icon" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+          <rect x="2" y="9" width="4" height="12"></rect>
+          <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+        <span class="sidebar__text">LinkedIn</span>
+      </a>
+      <a href="assets/Resume.pdf" download="Meenakshi_Resume.pdf" class="sidebar__social-link" title="Download Resume">
+        <svg viewBox="0 0 24 24" fill="none" class="sidebar__social-icon" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        <span class="sidebar__text">Resume</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__content">
+      <!-- Left: Text -->
+      <div class="hero__text reveal">
+        <span class="hero__label">COMPUTER SCIENCE &bull; CYBERSECURITY</span>
+        <h1 class="hero__title">
+          MEENAKSHI<br />
+          <span class="hero__title--accent">AKULA</span>
+        </h1>
+        <p class="hero__tagline">
+          Blending logic, creativity, and security<br />
+          to build impactful digital experiences.
+        </p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View Projects</a>
+          <a href="#contact" class="btn btn--outline">Get In Touch</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll" aria-hidden="true">
+      <span>&darr;</span> SCROLL
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section about" id="about" data-label="ABOUT">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__number">01</span>
+        <h2 class="section__title">ABOUT<br /><span class="section__title--light">ME</span></h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__content reveal">
+          <p class="about__lead">
+            I'm a Computer Science Engineering student at <strong>Lovely Professional University</strong>, passionate
+            about <strong>cybersecurity</strong>, <strong>software development</strong>, and building elegant solutions
+            to complex problems.
+          </p>
+          <p>
+            My journey spans from crafting responsive web experiences to analyzing security vulnerabilities. I thrive at
+            the intersection of creativity and logic — where clean code meets impactful design.
+          </p>
+          <p>
+            When I'm not coding, you'll find me solving competitive programming challenges, exploring ethical hacking
+            techniques, or diving into the latest in cloud computing.
+          </p>
+        </div>
+        <div class="about__details reveal">
+          <div class="about__detail-item">
+            <span class="about__detail-label">Location</span>
+            <span class="about__detail-value">India</span>
+          </div>
+          <div class="about__detail-item">
+            <span class="about__detail-label">Email</span>
+            <span class="about__detail-value">meenakshiakula19@gmail.com</span>
+          </div>
+          <div class="about__detail-item">
+            <span class="about__detail-label">Focus Areas</span>
+            <span class="about__detail-value">Cybersecurity &bull; Web Dev &bull; Cloud</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section class="section education" id="education" data-label="EDUCATION">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__number">02</span>
+        <h2 class="section__title">EDUCATION</h2>
+      </div>
+      <div class="education__grid">
+        <!-- University -->
+        <div class="edu-card reveal">
+          <div class="edu-card__header">
+            <span class="edu-card__degree">BACHELOR OF TECHNOLOGY &mdash; COMPUTER SCIENCE &amp; ENGINEERING</span>
+            <span class="edu-card__period">Aug 23 &mdash; Present</span>
+          </div>
+          <h3 class="edu-card__school">Lovely Professional University</h3>
+          <span class="edu-card__location">&bull; Punjab, India</span>
+
+          <div class="edu-card__stats">
+            <div class="edu-stat">
+              <span class="edu-stat__label">CGPA</span>
+              <span class="edu-stat__value">7.06</span>
+            </div>
+            <div class="edu-stat">
+              <span class="edu-stat__label">STATUS</span>
+              <span class="edu-stat__value">Currently Pursuing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Intermediate -->
+        <div class="edu-card reveal">
+          <div class="edu-card__header">
+            <span class="edu-card__degree">INTERMEDIATE &mdash; MPC</span>
+            <span class="edu-card__period">Jun 21 &mdash; Jul 23</span>
+          </div>
+          <h3 class="edu-card__school">Nano Junior College</h3>
+          <span class="edu-card__location">&bull; Hyderabad, Telangana</span>
+
+          <div class="edu-card__stats">
+            <div class="edu-stat">
+              <span class="edu-stat__label">PERCENTAGE</span>
+              <span class="edu-stat__value">90.8%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- High School -->
+        <div class="edu-card reveal">
+          <div class="edu-card__header">
+            <span class="edu-card__degree">MATRICULATION &mdash; SSC</span>
+            <span class="edu-card__period">Apr 20 &mdash; Jun 21</span>
+          </div>
+          <h3 class="edu-card__school">Queens High School</h3>
+          <span class="edu-card__location">&bull; Yadadri Bhongir, Telangana</span>
+
+          <div class="edu-card__stats">
+            <div class="edu-stat">
+              <span class="edu-stat__label">CGPA</span>
+              <span class="edu-stat__value">10.0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="section skills" id="skills" data-label="SKILLS">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__number">03</span>
+        <h2 class="section__title">SKILL<br /><span class="section__title--light">SET</span></h2>
+      </div>
+      <div class="skills__grid">
+        <!-- Languages -->
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">&#60;/&#62;</div>
+          <h3 class="skill-card__title">Languages</h3>
+          <div class="skill-card__tags">
+            <span>JavaScript</span><span>Java</span><span>C++</span><span>Python</span><span>HTML</span><span>CSS</span><span>SQL</span>
+          </div>
+        </div>
+        <!-- Cybersecurity -->
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">&#128274;</div>
+          <h3 class="skill-card__title">Cybersecurity</h3>
+          <div class="skill-card__tags">
+            <span>Nmap</span><span>Burp Suite</span><span>Wireshark</span><span>Metasploit</span>
+          </div>
+        </div>
+        <!-- Tools & Platforms -->
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">&#9881;</div>
+          <h3 class="skill-card__title">Tools & Platforms</h3>
+          <div class="skill-card__tags">
+            <span>Git</span><span>GitHub</span><span>MySQL</span><span>REST
+              APIs</span><span>Figma</span><span>VMware</span>
+          </div>
+        </div>
+        <!-- Core Subjects -->
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">&#128218;</div>
+          <h3 class="skill-card__title">Core Subjects</h3>
+          <div class="skill-card__tags">
+            <span>DBMS</span><span>Operating Systems</span><span>Computer Networks</span><span>OOPs</span>
+          </div>
+        </div>
+        <!-- Soft Skills -->
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">&#128161;</div>
+          <h3 class="skill-card__title">Soft Skills</h3>
+          <div class="skill-card__tags">
+            <span>Problem-Solving</span><span>Leadership</span><span>Adaptability</span><span>Quick Learner</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="section projects" id="projects" data-label="PROJECTS">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__number">04</span>
+        <h2 class="section__title">SELECTED<br /><span class="section__title--light">PROJECTS</span></h2>
+      </div>
+      <div class="projects__grid">
+        <!-- Project 1 -->
+        <article class="project-card reveal" id="project-1">
+          <div class="project-card__image-wrapper">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800" alt="AI Bargain Hunter Bot" class="project-card__image" />
+          </div>
+          <div class="project-card__number">01</div>
+          <div class="project-card__content">
+            <h3 class="project-card__title">AI Bargain Hunter Bot</h3>
+            <p class="project-card__desc">
+              AI-powered bot that tracks discounts and compares prices across platforms. Achieved <strong>95%
+                accuracy</strong> and <strong>90% speed improvement</strong> in price comparison workflows.
+            </p>
+            <div class="project-card__tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>API Fetching</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/hemasri12318167/AI-PROJECT-BARGAIN-HUNTER-BOT" class="project-card__link project-card__link--github" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal" id="project-2">
+          <div class="project-card__image-wrapper">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800" alt="Student Grades Analyzer" class="project-card__image" />
+          </div>
+          <div class="project-card__number">02</div>
+          <div class="project-card__content">
+            <h3 class="project-card__title">Student Grades Analyzer</h3>
+            <p class="project-card__desc">
+              C++ application that processes student records, computes results using STL (vectors, maps). Optimized
+              runtime performance by <strong>92%</strong>.
+            </p>
+            <div class="project-card__tech">
+              <span>C++</span><span>STL</span><span>Vectors</span><span>Maps</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/MeenakshiAkula/Student-gardes-analyzer" class="project-card__link project-card__link--github" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal" id="project-3">
+          <div class="project-card__image-wrapper">
+            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=800" alt="Cybersecurity Virtual Experience" class="project-card__image" />
+          </div>
+          <div class="project-card__number">03</div>
+          <div class="project-card__content">
+            <h3 class="project-card__title">Cybersecurity Virtual Experience</h3>
+            <p class="project-card__desc">
+              Tata Forage program — SOC operations, log analysis, threat detection, incident reporting, and
+              vulnerability analysis in real-world scenarios.
+            </p>
+            <div class="project-card__tech">
+              <span>SOC</span><span>Log Analysis</span><span>Threat Detection</span><span>Incident Reporting</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_691b4ef484b3b1bc52cc8f5e_1763575570747_completion_certificate.pdf" class="project-card__link project-card__link--github" target="_blank" rel="noopener noreferrer">
+                Link
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS SECTION ===== -->
+  <section class="section achievements" id="achievements" data-label="ACHIEVEMENTS">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__number">05</span>
+        <h2 class="section__title">ACHIEVEMENTS</h2>
+      </div>
+      <div class="achievements__grid">
+        <div class="achievement-card reveal">
+          <div class="achievement-card__icon">&#127942;</div>
+          <h3 class="achievement-card__title">HackEthics Workshop</h3>
+          <p>Top 5 in Ethical Hacking Workshop among <strong>250 participants</strong>.</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-card__icon">&#11088;</div>
+          <h3 class="achievement-card__title">HackerRank Python</h3>
+          <p>Earned <strong>5-star Python badge</strong> on HackerRank.</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-card__icon">&#128187;</div>
+          <h3 class="achievement-card__title">Competitive Coding</h3>
+          <p>Solved <strong>100+ coding problems</strong> across platforms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS SECTION ===== -->
+  <section class="section certifications" id="certifications" data-label="CERTIFICATIONS">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__number">06</span>
+        <h2 class="section__title">CERTIFICATIONS</h2>
+      </div>
+      <div class="certifications__grid">
+        <div class="cert-card reveal">
+          <div class="cert-card__icon">&#128187;</div>
+          <span class="cert-card__provider">Infosys</span>
+          <h3 class="cert-card__name">ChatGPT Prompt Engineering</h3>
+          <a href="https://drive.google.com/file/d/1JlqOxwZlVhUbnjxx1YX0M6C_tNjoR8Bw/view" target="_blank" class="btn btn--outline btn--sm btn--cert">View Certificate</a>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-card__icon">&#9729;</div>
+          <span class="cert-card__provider">NPTEL</span>
+          <h3 class="cert-card__name">Cloud Computing</h3>
+          <a href="https://drive.google.com/file/d/1WrA_fPFSeJPOoOFe2QKB24_KbdHZXjgY/view" target="_blank" class="btn btn--outline btn--sm btn--cert">View Certificate</a>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-card__icon">&#127891;</div>
+          <span class="cert-card__provider">Coursera</span>
+          <h3 class="cert-card__name">Computer Networking</h3>
+          <a href="https://www.coursera.org/account/accomplishments/verify/QD78X8N7Y9JN" target="_blank" class="btn btn--outline btn--sm btn--cert">View Certificate</a>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-card__icon">&#128187;</div>
+          <span class="cert-card__provider">FreeCodeCamp</span>
+          <h3 class="cert-card__name">Responsive Web Design</h3>
+          <a href="https://www.freecodecamp.org/certification/fcce8140dd2-8087-4377-9d79-16abc335d94b/responsive-web-design" target="_blank" class="btn btn--outline btn--sm btn--cert">View Certificate</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section contact" id="contact" data-label="CONTACT">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__number">07</span>
+        <h2 class="section__title">GET IN<br /><span class="section__title--light">TOUCH</span></h2>
+      </div>
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <p class="contact__lead">
+            Have a project in mind, or just want to say hello? I'd love to hear from you.
+          </p>
+          <div class="contact__links">
+            <a href="mailto:meenakshiakula19@gmail.com" class="contact__link" id="contact-email">
+              <span class="contact__link-label">Email</span>
+              <span class="contact__link-value">meenakshiakula19@gmail.com</span>
+            </a>
+            <a href="https://github.com/MeenakshiAkula" target="_blank" rel="noopener noreferrer" class="contact__link"
+              id="contact-github">
+              <span class="contact__link-label">GitHub</span>
+              <span class="contact__link-value">github.com/MeenakshiAkula</span>
+            </a>
+            <a href="https://linkedin.com/in/MeenakshiAkula" target="_blank" rel="noopener noreferrer"
+              class="contact__link" id="contact-linkedin">
+              <span class="contact__link-label">LinkedIn</span>
+              <span class="contact__link-value">linkedin.com/in/MeenakshiAkula</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact__form-wrapper reveal">
+          <form class="contact__form" id="contactForm">
+            <div class="form-group">
+              <label for="formName">Name</label>
+              <input type="text" id="formName" name="name" required placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label for="formEmail">Email</label>
+              <input type="email" id="formEmail" name="email" required placeholder="Your email" />
+            </div>
+            <div class="form-group">
+              <label for="formMessage">Message</label>
+              <textarea id="formMessage" name="message" rows="5" required placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="formSubmit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">&copy; 2026 Meenakshi Akula. All rights reserved.</p>
+      <div class="footer__socials">
+        <a href="https://github.com/MeenakshiAkula" target="_blank" rel="noopener noreferrer"
+          aria-label="GitHub">GitHub</a>
+        <span>&bull;</span>
+        <a href="https://linkedin.com/in/MeenakshiAkula" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn">LinkedIn</a>
+        <span>&bull;</span>
+        <a href="mailto:meenakshiakula19@gmail.com" aria-label="Email">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script src="script.js"></script>
+</body>
+
+</html>
