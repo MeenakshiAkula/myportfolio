@@ -180,21 +180,45 @@
   sections.forEach((section) => sectionObserver.observe(section));
 
   // ==========================================
-  // CONTACT FORM (simple handler)
+  // CONTACT FORM (EmailJS Integration)
   // ==========================================
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
+    // Initialize EmailJS with your Public Key
+    // emailjs.init("YOUR_PUBLIC_KEY"); 
+
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const btn = document.getElementById('formSubmit');
       const originalText = btn.textContent;
-      btn.textContent = 'SENT!';
-      btn.style.background = 'var(--clr-warm)';
-      setTimeout(() => {
-        btn.textContent = originalText;
-        btn.style.background = '';
-        contactForm.reset();
-      }, 2500);
+      
+      btn.textContent = 'SENDING...';
+      btn.disabled = true;
+
+      // EmailJS configuration
+      const serviceID = "YOUR_SERVICE_ID";
+      const templateID = "YOUR_TEMPLATE_ID";
+
+      emailjs.sendForm(serviceID, templateID, contactForm)
+        .then(() => {
+          btn.textContent = 'SENT!';
+          btn.style.background = 'var(--clr-warm)';
+          contactForm.reset();
+          setTimeout(() => {
+            btn.textContent = originalText;
+            btn.style.background = '';
+            btn.disabled = false;
+          }, 3000);
+        }, (err) => {
+          btn.textContent = 'FAILED!';
+          btn.style.background = '#e74c3c';
+          console.error('EmailJS Error:', err);
+          setTimeout(() => {
+            btn.textContent = originalText;
+            btn.style.background = '';
+            btn.disabled = false;
+          }, 3000);
+        });
     });
   }
 
