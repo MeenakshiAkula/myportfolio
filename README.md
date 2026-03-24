@@ -34,7 +34,7 @@ This is my personal portfolio website where I showcase:
 
 ## 🔗 Live Demo
 
-👉 (Add your GitHub Pages link here once live)
+👉 [(Add your GitHub Pages link here once live)](https://meenakshiakula.github.io/myportfolio/)
 
 ---
 
@@ -46,8 +46,8 @@ This is my personal portfolio website where I showcase:
 
 ## 📬 Contact Me
 
-* 📧 Email: [your-email@example.com](mailto:your-email@example.com)
-* 💼 LinkedIn: (add your link)
+* 📧 Email: [meenakshiakua19@gmail.com]
+* 💼 LinkedIn: (https://www.linkedin.com/in/meenakshi-akula/)
 * 🐙 GitHub: https://github.com/MeenakshiAkula
 
 ---
