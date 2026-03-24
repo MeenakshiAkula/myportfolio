@@ -180,6 +180,7 @@
   sections.forEach((section) => sectionObserver.observe(section));
 
   // ==========================================
+<<<<<<< HEAD
   // CONTACT FORM (EmailJS Integration)
   // ==========================================
   const contactForm = document.getElementById('contactForm');
@@ -187,10 +188,17 @@
     // Initialize EmailJS with your Public Key
     // emailjs.init("YOUR_PUBLIC_KEY"); 
 
+=======
+  // CONTACT FORM (simple handler)
+  // ==========================================
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+>>>>>>> ae6a31d3b9feeded84dbb46af4c2e06e1e61895b
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const btn = document.getElementById('formSubmit');
       const originalText = btn.textContent;
+<<<<<<< HEAD
       
       btn.textContent = 'SENDING...';
       btn.disabled = true;
@@ -219,6 +227,15 @@
             btn.disabled = false;
           }, 3000);
         });
+=======
+      btn.textContent = 'SENT!';
+      btn.style.background = 'var(--clr-warm)';
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.style.background = '';
+        contactForm.reset();
+      }, 2500);
+>>>>>>> ae6a31d3b9feeded84dbb46af4c2e06e1e61895b
     });
   }
 

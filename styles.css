@@ -382,6 +382,7 @@ ul {
   justify-content: center;
   padding: 8rem 3rem 3rem;
   overflow: hidden;
+<<<<<<< HEAD
   background: var(--clr-bg);
 }
 
@@ -390,6 +391,13 @@ ul {
   grid-template-columns: 1.2fr 1fr;
   align-items: center;
   gap: 4rem;
+=======
+  background: url('assets/images/hero-portrait.png') center/cover no-repeat;
+}
+
+.hero__content {
+  display: block;
+>>>>>>> ae6a31d3b9feeded84dbb46af4c2e06e1e61895b
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
@@ -397,6 +405,7 @@ ul {
   z-index: 2;
 }
 
+<<<<<<< HEAD
 .hero__image-column {
   position: relative;
   display: flex;
@@ -463,6 +472,8 @@ ul {
   }
 }
 
+=======
+>>>>>>> ae6a31d3b9feeded84dbb46af4c2e06e1e61895b
 .hero__text {
   max-width: 700px;
 }
